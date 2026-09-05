@@ -43,11 +43,11 @@ const popularRoutes = [
       "Leave Delhi’s rush behind and enter Jaipur’s royal world of forts, colourful bazaars and unforgettable food.",
     highlights: ["Royal forts", "Food trails", "Quick escape"],
     icon: SunMedium,
-    gradient: "from-red-700 via-red-600 to-orange-500",
-    glow: "bg-orange-300/30",
-    accentText: "text-red-600 dark:text-red-400",
-    softBackground: "bg-red-50 dark:bg-red-950/40",
-    softBorder: "border-red-100 dark:border-red-900/50",
+    gradient: "from-emerald-700 via-emerald-600 to-teal-500",
+    glow: "bg-emerald-300/30",
+    accentText: "text-emerald-600 dark:text-emerald-400",
+    softBackground: "bg-emerald-50 dark:bg-emerald-950/40",
+    softBorder: "border-emerald-100 dark:border-emerald-900/50",
   },
   {
     id: 2,
@@ -321,11 +321,11 @@ const PopularRoutes = () => {
   return (
     <section className="relative isolate overflow-hidden bg-white py-16 transition-colors duration-300 dark:bg-slate-950 sm:py-20">
       {/* Background */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-red-50/70 via-white to-orange-50/60 dark:from-red-950/10 dark:via-slate-950 dark:to-orange-950/10" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-emerald-50/70 via-white to-teal-50/60 dark:from-emerald-950/15 dark:via-slate-950 dark:to-teal-950/15" />
 
-      <div className="pointer-events-none absolute -left-32 top-16 h-96 w-96 rounded-full bg-red-300/20 blur-3xl dark:bg-red-600/10" />
+      <div className="pointer-events-none absolute -left-32 top-16 h-96 w-96 rounded-full bg-emerald-300/20 blur-3xl dark:bg-emerald-600/10" />
 
-      <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-orange-300/20 blur-3xl dark:bg-orange-500/10" />
+      <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-teal-300/20 blur-3xl dark:bg-teal-500/10" />
 
       <div className="pointer-events-none absolute inset-0 opacity-[0.035] dark:opacity-[0.06]">
         <div className="h-full w-full bg-[radial-gradient(circle_at_center,_#0f172a_1px,_transparent_1px)] [background-size:30px_30px] dark:bg-[radial-gradient(circle_at_center,_#ffffff_1px,_transparent_1px)]" />
@@ -335,14 +335,14 @@ const PopularRoutes = () => {
         {/* Header */}
         <div className="mb-9 flex flex-col gap-6 sm:mb-11 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-red-100 bg-white/90 px-4 py-2 text-[10px] font-black uppercase tracking-[0.18em] text-red-600 shadow-sm backdrop-blur dark:border-red-900/50 dark:bg-slate-900/80 dark:text-red-400">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/90 px-4 py-2 text-[10px] font-black uppercase tracking-[0.18em] text-emerald-700 shadow-sm backdrop-blur dark:border-emerald-800/60 dark:bg-slate-900/80 dark:text-emerald-400">
               <TrendingUp className="h-4 w-4" />
               Most loved journeys
             </div>
 
             <h2 className="text-3xl font-black tracking-[-0.04em] text-slate-950 dark:text-white sm:text-4xl lg:text-5xl">
               Popular routes with
-              <span className="ml-2 bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
+              <span className="ml-2 bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-600 bg-clip-text text-transparent">
                 unforgettable stories
               </span>
             </h2>
@@ -356,7 +356,7 @@ const PopularRoutes = () => {
           {/* Controls */}
           <div className="flex items-center justify-between gap-3 sm:justify-start">
             <div className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white/90 px-4 py-2.5 shadow-sm backdrop-blur dark:border-slate-800 dark:bg-slate-900/80">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-red-50 text-red-600 dark:bg-red-950/40 dark:text-red-400">
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 dark:text-emerald-400">
                 <Route className="h-4 w-4" />
               </div>
 
@@ -377,7 +377,7 @@ const PopularRoutes = () => {
                 onClick={() => scrollRoutes(-1)}
                 disabled={!canScrollLeft}
                 aria-label="Show previous popular route"
-                className="flex h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-red-200 hover:bg-red-50 hover:text-red-600 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-red-900 dark:hover:bg-red-950/30 dark:hover:text-red-400"
+                className="flex h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-600 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-emerald-900 dark:hover:bg-emerald-950/30 dark:hover:text-emerald-400"
               >
                 <ArrowLeft className="h-5 w-5" />
               </button>
@@ -617,8 +617,8 @@ const PopularRoutes = () => {
                 aria-label={`Show ${route.from} to ${route.to} route`}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   currentRouteIndex === index
-                    ? "w-7 bg-gradient-to-r from-red-600 to-orange-500"
-                    : "w-2 bg-slate-300 hover:bg-red-300 dark:bg-slate-700 dark:hover:bg-red-800"
+                    ? "w-7 bg-gradient-to-r from-emerald-600 to-teal-500"
+                    : "w-2 bg-slate-300 hover:bg-emerald-300 dark:bg-slate-700 dark:hover:bg-emerald-800"
                 }`}
               />
             ))}
@@ -633,15 +633,15 @@ const PopularRoutes = () => {
 
         {/* Bottom quote */}
         <div className="relative mt-8 overflow-hidden rounded-3xl bg-slate-950 px-5 py-5 text-white shadow-xl dark:border dark:border-slate-800 sm:px-7">
-          <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-red-500/25 blur-3xl" />
+          <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-emerald-500/25 blur-3xl" />
 
           <div className="relative flex items-center gap-4">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/10 text-orange-400">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/10 text-emerald-400">
               <MapPin className="h-5 w-5" />
             </div>
 
             <div>
-              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-red-400">
+              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-emerald-400">
                 Every route has a story
               </p>
 

@@ -32,8 +32,8 @@ const Footer = () => {
   return (
     <footer className="relative isolate overflow-hidden bg-slate-950 pt-16 transition-colors duration-300 dark:bg-[#050A15] sm:pt-20 lg:pt-24">
      
-      <div className="pointer-events-none absolute -left-40 top-0 h-96 w-96 rounded-full bg-red-600/10 blur-[128px] dark:bg-red-600/10" />
-      <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-orange-500/10 blur-[128px] dark:bg-orange-500/10" />
+      <div className="pointer-events-none absolute -left-40 top-0 h-96 w-96 rounded-full bg-emerald-600/10 blur-[128px] dark:bg-emerald-600/10" />
+      <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-teal-500/10 blur-[128px] dark:bg-teal-500/10" />
       
      
       <div className="pointer-events-none absolute inset-0 opacity-20 dark:opacity-30">
@@ -46,14 +46,14 @@ const Footer = () => {
         
           <div className="sm:col-span-2 lg:col-span-4">
             <Link to="/" className="inline-flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-red-600 to-orange-500 text-white shadow-lg shadow-red-500/20">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-500 text-white shadow-lg shadow-emerald-500/20">
                 <BusFront className="h-6 w-6" />
               </div>
               <div>
                 <h1 className="text-2xl font-black tracking-tight text-white">
                   TedBus
                 </h1>
-                <p className="-mt-0.5 text-[10px] font-black uppercase tracking-[0.2em] text-red-400">
+                <p className="-mt-0.5 text-[10px] font-black uppercase tracking-[0.2em] text-emerald-400">
                   {t("footer.slogan", "Travel with comfort")}
                 </p>
               </div>
@@ -80,7 +80,7 @@ const Footer = () => {
                     to={item.to}
                     className="group inline-flex items-center text-sm font-medium text-slate-400 transition hover:text-white"
                   >
-                    <span className="mr-2 h-px w-0 bg-red-500 transition-all duration-300 group-hover:w-4" />
+                    <span className="mr-2 h-px w-0 bg-emerald-500 transition-all duration-300 group-hover:w-4" />
                     {item.label}
                   </Link>
                 </li>
@@ -100,7 +100,7 @@ const Footer = () => {
                     to={item.to}
                     className="group inline-flex items-center text-sm font-medium text-slate-400 transition hover:text-white"
                   >
-                    <span className="mr-2 h-px w-0 bg-red-500 transition-all duration-300 group-hover:w-4" />
+                    <span className="mr-2 h-px w-0 bg-emerald-500 transition-all duration-300 group-hover:w-4" />
                     {item.label}
                   </Link>
                 </li>
@@ -119,7 +119,7 @@ const Footer = () => {
                 href="mailto:support@tedbus.com"
                 className="group flex items-center gap-3 transition hover:text-white"
               >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-400 transition group-hover:border-red-500/30 group-hover:bg-red-500/10 group-hover:text-red-400">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-400 transition group-hover:border-emerald-500/30 group-hover:bg-emerald-500/10 group-hover:text-emerald-400">
                   <Mail className="h-4 w-4" />
                 </span>
                 support@tedbus.com
@@ -129,14 +129,14 @@ const Footer = () => {
                 href="tel:+919838035860"
                 className="group flex items-center gap-3 transition hover:text-white"
               >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-400 transition group-hover:border-red-500/30 group-hover:bg-red-500/10 group-hover:text-red-400">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-400 transition group-hover:border-emerald-500/30 group-hover:bg-emerald-500/10 group-hover:text-emerald-400">
                   <Phone className="h-4 w-4" />
                 </span>
                 +91 9838035860
               </a>
 
               <div className="group flex items-center gap-3 transition hover:text-white">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-400 transition group-hover:border-red-500/30 group-hover:bg-red-500/10 group-hover:text-red-400">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-400 transition group-hover:border-emerald-500/30 group-hover:bg-emerald-500/10 group-hover:text-emerald-400">
                   <MapPin className="h-4 w-4" />
                 </span>
                 New Delhi, India
@@ -158,7 +158,7 @@ const Footer = () => {
               100% Secure
             </span>
             <span className="hidden items-center gap-1.5 sm:inline-flex">
-              <Headphones className="h-3.5 w-3.5 text-red-500" />
+              <Headphones className="h-3.5 w-3.5 text-emerald-400" />
               24/7 Support
             </span>
           </div>

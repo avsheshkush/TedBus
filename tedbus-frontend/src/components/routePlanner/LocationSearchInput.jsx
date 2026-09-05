@@ -6,7 +6,7 @@ const LocationSearchInput = ({
   placeholder = "Search location...",
   onSelect,
   value = "",
-  iconColor = "text-red-600",
+  iconColor = "text-emerald-600",
   onClear,
 }) => {
   const [query, setQuery] = useState(value);
@@ -85,7 +85,7 @@ const LocationSearchInput = ({
 
       <div
         className={`relative rounded-2xl transition-all duration-300 ${
-          focused ? "ring-4 ring-red-500/10" : ""
+          focused ? "ring-4 ring-emerald-500/10" : ""
         }`}
       >
         <MapPin
@@ -103,10 +103,10 @@ const LocationSearchInput = ({
           }}
           onBlur={() => setFocused(false)}
           placeholder={placeholder}
-          className="w-full rounded-2xl border border-slate-200 bg-slate-50/80 py-3 pl-10 pr-9 text-sm font-bold text-slate-800 placeholder:font-medium placeholder:text-slate-400 outline-none transition-all duration-300 focus:border-red-400 focus:bg-white dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-200 dark:placeholder:text-slate-500 dark:focus:border-red-500/60 dark:focus:bg-slate-800"
+          className="w-full rounded-2xl border border-slate-200 bg-slate-50/80 py-3 pl-10 pr-9 text-sm font-bold text-slate-800 placeholder:font-medium placeholder:text-slate-400 outline-none transition-all duration-300 focus:border-emerald-500 focus:bg-white dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-200 dark:placeholder:text-slate-500 dark:focus:border-emerald-500/60 dark:focus:bg-slate-800"
         />
         {loading && (
-          <Loader2 className="absolute right-3.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 animate-spin text-red-500" />
+          <Loader2 className="absolute right-3.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 animate-spin text-emerald-500" />
         )}
         {!loading && query && (
           <button

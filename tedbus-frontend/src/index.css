@@ -17,22 +17,55 @@
 
 
 .clay-card {
-  background: #fff0e6;
-  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 28px;
   box-shadow: 
-    12px 12px 24px rgba(220, 38, 38, 0.12),
-    -8px -8px 20px rgba(255, 255, 255, 0.8),
-    inset 4px 4px 8px rgba(255,255,255,0.6),
-    inset -4px -4px 8px rgba(220,38,38,0.08);
-  border: 1px solid rgba(255,255,255,0.6);
-  transition: all 0.3s ease;
+    0 20px 40px -15px rgba(5, 150, 105, 0.12),
+    0 0 0 1px rgba(16, 185, 129, 0.15),
+    inset 0 1px 2px rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clay-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   box-shadow: 
-    16px 16px 32px rgba(220, 38, 38, 0.18),
-    -10px -10px 24px rgba(255, 255, 255, 0.9);
+    0 24px 48px -12px rgba(5, 150, 105, 0.2),
+    0 0 0 1px rgba(16, 185, 129, 0.25),
+    inset 0 1px 2px rgba(255, 255, 255, 1);
+}
+
+.dark .clay-card {
+  background: rgba(15, 23, 42, 0.75);
+  box-shadow: 
+    0 20px 40px -15px rgba(0, 0, 0, 0.5),
+    0 0 20px -5px rgba(16, 185, 129, 0.18),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.dark .clay-card:hover {
+  box-shadow: 
+    0 24px 48px -12px rgba(0, 0, 0, 0.6),
+    0 0 28px -4px rgba(16, 185, 129, 0.28),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.glass-card-emerald {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  box-shadow: 0 16px 36px -12px rgba(5, 150, 105, 0.1);
+}
+
+.dark .glass-card-emerald {
+  background: rgba(15, 23, 42, 0.78);
+  border: 1px solid rgba(16, 185, 129, 0.22);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.45), 0 0 20px -6px rgba(16, 185, 129, 0.15);
 }
 
 .mapboxgl-ctrl-top-right {

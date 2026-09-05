@@ -39,12 +39,12 @@ const features = [
     icon: CreditCard,
     title: "Secure Payments",
     desc: "Pay with confidence through trusted, encrypted and PCI-compliant payment gateways.",
-    gradient: "from-red-600 to-orange-500",
-    glow: "group-hover:shadow-red-500/20",
-    softBg: "bg-red-50 dark:bg-red-950/40",
-    softBorder: "border-red-100 dark:border-red-900/50",
-    accentText: "text-red-600 dark:text-red-400",
-    dotColor: "bg-red-500",
+    gradient: "from-teal-600 to-emerald-500",
+    glow: "group-hover:shadow-teal-500/20",
+    softBg: "bg-teal-50 dark:bg-teal-950/40",
+    softBorder: "border-teal-100 dark:border-teal-900/50",
+    accentText: "text-teal-600 dark:text-teal-400",
+    dotColor: "bg-teal-500",
   },
   {
     icon: TicketCheck,
@@ -116,9 +116,9 @@ const Features = () => {
       {/* Background */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-50/80 via-white to-slate-50/80 dark:from-slate-950 dark:via-slate-900/50 dark:to-slate-950" />
 
-      <div className="pointer-events-none absolute -left-32 top-1/4 h-96 w-96 rounded-full bg-red-200/20 blur-3xl dark:bg-red-600/5" />
+      <div className="pointer-events-none absolute -left-32 top-1/4 h-96 w-96 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-600/10" />
 
-      <div className="pointer-events-none absolute -right-32 bottom-1/4 h-96 w-96 rounded-full bg-orange-200/20 blur-3xl dark:bg-orange-600/5" />
+      <div className="pointer-events-none absolute -right-32 bottom-1/4 h-96 w-96 rounded-full bg-teal-200/20 blur-3xl dark:bg-teal-600/10" />
 
       <div className="pointer-events-none absolute inset-0 opacity-[0.03] dark:opacity-[0.05]">
         <div className="h-full w-full bg-[radial-gradient(circle_at_center,_#0f172a_1px,_transparent_1px)] [background-size:28px_28px] dark:bg-[radial-gradient(circle_at_center,_#ffffff_1px,_transparent_1px)]" />
@@ -127,14 +127,14 @@ const Features = () => {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-red-100 bg-white/90 px-4 py-2 text-[10px] font-black uppercase tracking-[0.18em] text-red-600 shadow-sm backdrop-blur dark:border-red-900/50 dark:bg-slate-900/80 dark:text-red-400 sm:text-xs">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/90 px-4 py-2 text-[10px] font-black uppercase tracking-[0.18em] text-emerald-700 shadow-sm backdrop-blur dark:border-emerald-800/60 dark:bg-slate-900/80 dark:text-emerald-400 sm:text-xs">
             <Zap className="h-4 w-4" />
             Why choose TedBus
           </div>
 
           <h2 className="text-3xl font-black tracking-[-0.04em] text-slate-950 dark:text-white sm:text-4xl lg:text-5xl">
             Built for a
-            <span className="mx-2 bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
+            <span className="mx-2 bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-600 bg-clip-text text-transparent">
               seamless
             </span>
             travel experience
@@ -210,19 +210,19 @@ const Features = () => {
 
         {/* Trust stats */}
         <div className="relative mt-10 overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-950 to-slate-900 p-5 text-white shadow-2xl dark:border-slate-800 sm:p-6">
-          <div className="pointer-events-none absolute -right-16 -top-16 h-52 w-52 rounded-full bg-red-500/20 blur-3xl" />
+          <div className="pointer-events-none absolute -right-16 -top-16 h-52 w-52 rounded-full bg-emerald-500/20 blur-3xl" />
 
-          <div className="pointer-events-none absolute -bottom-20 left-1/4 h-44 w-44 rounded-full bg-orange-500/15 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-20 left-1/4 h-44 w-44 rounded-full bg-teal-500/15 blur-3xl" />
 
           <div className="relative flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
             {/* Left */}
             <div className="flex items-start gap-4">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/10 text-red-400 backdrop-blur">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/10 text-emerald-400 backdrop-blur">
                 <Sparkles className="h-5 w-5" />
               </div>
 
               <div>
-                <p className="text-[9px] font-black uppercase tracking-[0.2em] text-red-400">
+                <p className="text-[9px] font-black uppercase tracking-[0.2em] text-emerald-400">
                   Traveller confidence
                 </p>
 

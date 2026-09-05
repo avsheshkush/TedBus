@@ -21,10 +21,10 @@ import {
  */
 const BUS_THEMES = [
   {
-    solid: "#DC2626",
-    text: "text-red-600 dark:text-red-400",
-    ring: "ring-red-100 dark:ring-red-900/40",
-    chip: "bg-red-50 text-red-700 border-red-100 dark:bg-red-950/30 dark:text-red-400 dark:border-red-900/40",
+    solid: "#0D9488",
+    text: "text-teal-600 dark:text-teal-400",
+    ring: "ring-teal-100 dark:ring-teal-900/40",
+    chip: "bg-teal-50 text-teal-700 border-teal-100 dark:bg-teal-950/30 dark:text-teal-400 dark:border-teal-900/40",
   },
   {
     solid: "#7C3AED",

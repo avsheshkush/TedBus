@@ -31,27 +31,27 @@ const DAY_IN_MILLISECONDS = 24 * 60 * 60 * 1000;
  */
 const OFFER_THEMES = [
   {
-    id: "crimson",
-    gradient: "from-red-700 via-red-600 to-orange-500",
-    glow: "bg-red-400/25",
-    accentText: "text-red-600 dark:text-red-400",
-    softBg: "bg-red-50 dark:bg-red-950/40",
-    softBorder: "border-red-100 dark:border-red-900/50",
+    id: "emerald",
+    gradient: "from-emerald-700 via-emerald-600 to-teal-500",
+    glow: "bg-emerald-400/25",
+    accentText: "text-emerald-600 dark:text-emerald-400",
+    softBg: "bg-emerald-50 dark:bg-emerald-950/40",
+    softBorder: "border-emerald-100 dark:border-emerald-900/50",
     hoverBorder:
-      "hover:border-red-200 dark:hover:border-red-900/60",
-    hoverShadow: "hover:shadow-red-500/10",
-    dotColor: "bg-red-500",
-    copyBg: "bg-white text-red-700 hover:bg-red-600 hover:text-white",
-    copiedBg: "bg-emerald-500 text-white",
+      "hover:border-emerald-200 dark:hover:border-emerald-900/60",
+    hoverShadow: "hover:shadow-emerald-500/10",
+    dotColor: "bg-emerald-500",
+    copyBg: "bg-white text-emerald-700 hover:bg-emerald-600 hover:text-white",
+    copiedBg: "bg-teal-500 text-white",
     tagLabel: "Hot Deal",
     countdownActive:
       "border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-950/60",
     countdownUrgent:
       "border-amber-200 bg-amber-50 dark:border-amber-900/50 dark:bg-amber-950/25",
-    countdownText: "text-red-600 dark:text-red-400",
+    countdownText: "text-emerald-600 dark:text-emerald-400",
     countdownUrgentText: "text-amber-700 dark:text-amber-400",
     unitBorder:
-      "border-red-100 bg-white dark:border-red-900/30 dark:bg-slate-900",
+      "border-emerald-100 bg-white dark:border-emerald-900/30 dark:bg-slate-900",
     unitUrgentBorder:
       "border-amber-100 bg-white dark:border-amber-900/40 dark:bg-slate-900",
   },
@@ -785,9 +785,9 @@ const Offers = () => {
       {/* Background */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-red-50/80 via-transparent to-orange-50/80 dark:from-red-950/20 dark:via-transparent dark:to-orange-950/10" />
 
-      <div className="pointer-events-none absolute -left-32 top-10 h-96 w-96 rounded-full bg-red-300/25 blur-3xl dark:bg-red-600/10" />
+      <div className="pointer-events-none absolute -left-32 top-10 h-96 w-96 rounded-full bg-emerald-300/20 blur-3xl dark:bg-emerald-600/10" />
 
-      <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-orange-300/25 blur-3xl dark:bg-orange-500/10" />
+      <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-teal-300/20 blur-3xl dark:bg-teal-500/10" />
 
       <div className="pointer-events-none absolute inset-0 opacity-[0.03] dark:opacity-[0.05]">
         <div className="h-full w-full bg-[radial-gradient(circle_at_center,_#0f172a_1px,_transparent_1px)] [background-size:28px_28px] dark:bg-[radial-gradient(circle_at_center,_#ffffff_1px,_transparent_1px)]" />
@@ -797,20 +797,20 @@ const Offers = () => {
         {/* Header */}
         <div className="mb-8 flex flex-col gap-5 sm:mb-10 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
-            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-red-100 bg-white/90 px-3 py-1.5 text-[9px] font-black uppercase tracking-[0.16em] text-red-600 shadow-sm backdrop-blur dark:border-red-900/50 dark:bg-slate-900/80 dark:text-red-400">
+            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/90 px-3 py-1.5 text-[9px] font-black uppercase tracking-[0.16em] text-emerald-700 shadow-sm backdrop-blur dark:border-emerald-800/60 dark:bg-slate-900/80 dark:text-emerald-400">
               <Sparkles className="h-3.5 w-3.5" />
               Limited-time travel deals
             </div>
 
             <div className="flex items-start gap-3">
-              <div className="hidden h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-red-600 to-orange-500 text-white shadow-lg shadow-red-500/25 sm:flex">
+              <div className="hidden h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-600 to-teal-500 text-white shadow-lg shadow-emerald-500/25 sm:flex">
                 <Gift className="h-5.5 w-5.5" />
               </div>
 
               <div>
                 <h2 className="text-2xl font-black tracking-[-0.03em] text-slate-950 dark:text-white sm:text-3xl lg:text-4xl">
                   Exclusive TedBus
-                  <span className="ml-2 bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
+                  <span className="ml-2 bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-600 bg-clip-text text-transparent">
                     Offers
                   </span>
                 </h2>
@@ -844,7 +844,7 @@ const Offers = () => {
                     }
                     disabled={!canScrollLeft}
                     aria-label="Previous offer"
-                    className="flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-red-200 hover:bg-red-50 hover:text-red-600 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-red-900 dark:hover:bg-red-950/30 dark:hover:text-red-400"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-600 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-emerald-900 dark:hover:bg-emerald-950/30 dark:hover:text-emerald-400"
                   >
                     <ArrowLeft className="h-4 w-4" />
                   </button>
@@ -856,7 +856,7 @@ const Offers = () => {
                     }
                     disabled={!canScrollRight}
                     aria-label="Next offer"
-                    className="flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-red-200 hover:bg-red-50 hover:text-red-600 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-red-900 dark:hover:bg-red-950/30 dark:hover:text-red-400"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-600 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-emerald-900 dark:hover:bg-emerald-950/30 dark:hover:text-emerald-400"
                   >
                     <ArrowRight className="h-4 w-4" />
                   </button>

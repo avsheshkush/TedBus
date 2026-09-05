@@ -31,11 +31,11 @@ const contactCards = [
       "Plot No. 123, Tech Park",
       "Delhi - 110092, India",
     ],
-    gradient: "from-red-600 to-orange-500",
-    accentText: "text-red-600 dark:text-red-400",
-    softBg: "bg-red-50 dark:bg-red-950/40",
-    softBorder: "border-red-100 dark:border-red-900/50",
-    glow: "group-hover:shadow-red-500/15",
+    gradient: "from-emerald-600 to-teal-500",
+    accentText: "text-emerald-600 dark:text-emerald-400",
+    softBg: "bg-emerald-50 dark:bg-emerald-950/40",
+    softBorder: "border-emerald-100 dark:border-emerald-900/50",
+    glow: "group-hover:shadow-emerald-500/15",
   },
   {
     id: 2,
@@ -376,10 +376,10 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-slate-50 transition-colors duration-300 dark:bg-slate-950">
       {/* Compact hero */}
-      <section className="relative isolate overflow-hidden bg-gradient-to-br from-red-700 via-red-600 to-orange-500 px-4 py-8 text-white sm:px-6 sm:py-10 lg:px-8 lg:py-12">
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-emerald-800 via-emerald-700 to-teal-600 px-4 py-8 text-white sm:px-6 sm:py-10 lg:px-8 lg:py-12">
         <div className="pointer-events-none absolute -left-16 -top-20 h-52 w-52 rounded-full bg-white/15 blur-3xl" />
 
-        <div className="pointer-events-none absolute -bottom-20 right-0 h-56 w-56 rounded-full bg-orange-300/25 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-20 right-0 h-56 w-56 rounded-full bg-teal-300/25 blur-3xl" />
 
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_40%)]" />
 
@@ -396,7 +396,7 @@ const Contact = () => {
             <span className="ml-2 text-white/95">TedBus Support</span>
           </h1>
 
-          <p className="mx-auto mt-2 max-w-xl text-xs font-medium leading-5 text-red-50/90 sm:text-sm sm:leading-6">
+          <p className="mx-auto mt-2 max-w-xl text-xs font-medium leading-5 text-emerald-50/90 sm:text-sm sm:leading-6">
             Have questions about bookings, payments, refunds or your journey?
             Our team is ready to help — reach out anytime.
           </p>
@@ -610,7 +610,7 @@ const Contact = () => {
                       className={`h-12 w-full cursor-pointer appearance-none rounded-xl border bg-slate-50 pl-[3.25rem] pr-4 text-sm font-bold text-slate-900 outline-none transition focus:bg-white focus:ring-4 dark:bg-slate-800/70 dark:text-white dark:focus:bg-slate-900 ${
                         fieldErrors.subject
                           ? "border-red-400 ring-red-500/5 dark:border-red-800"
-                          : "border-slate-200 focus:border-red-500 focus:ring-red-500/10 dark:border-slate-700"
+                          : "border-slate-200 focus:border-emerald-500 focus:ring-emerald-500/10 dark:border-slate-700"
                       }`}
                     >
                       <option value="">Select subject</option>
@@ -678,7 +678,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="group flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-red-600 via-red-600 to-orange-500 px-6 py-3.5 text-sm font-black text-white shadow-xl shadow-red-500/25 transition duration-200 hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-red-500/30 disabled:cursor-not-allowed disabled:opacity-70 active:translate-y-0 active:scale-[0.98]"
+                    className="group flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 px-6 py-3.5 text-sm font-black text-white shadow-xl shadow-emerald-500/25 transition duration-200 hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-emerald-500/35 disabled:cursor-not-allowed disabled:opacity-70 active:translate-y-0 active:scale-[0.98]"
                   >
                     {loading ? (
                       <Loader2 className="h-4 w-4 animate-spin" />
@@ -707,7 +707,7 @@ const Contact = () => {
             <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-lg shadow-slate-900/5 dark:border-slate-800 dark:bg-slate-900 dark:shadow-black/20">
               <div className="border-b border-slate-100 bg-gradient-to-r from-slate-950 to-slate-900 p-5 text-white dark:border-slate-800">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-white/10 text-red-400 backdrop-blur">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-white/10 text-emerald-400 backdrop-blur">
                     <Zap className="h-5 w-5" />
                   </div>
 

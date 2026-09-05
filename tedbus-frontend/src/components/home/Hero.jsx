@@ -320,15 +320,15 @@ const CityAutocomplete = ({
             error
               ? "border-red-400 bg-red-50/60 ring-4 ring-red-500/5 dark:border-red-800 dark:bg-red-950/20"
               : isOpen
-                ? "border-red-500 bg-white ring-4 ring-red-500/10 dark:bg-slate-900"
+                ? "border-emerald-500 bg-white ring-4 ring-emerald-500/10 dark:bg-slate-900"
                 : "border-slate-200 bg-slate-50 hover:border-slate-300 dark:border-slate-700 dark:bg-slate-800/70 dark:hover:border-slate-600"
           }`}
         >
           <div
             className={`pointer-events-none absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-xl transition ${
               isOpen
-                ? "bg-red-600 text-white shadow-md shadow-red-500/20"
-                : "bg-white text-red-600 shadow-sm dark:bg-slate-900 dark:text-red-400"
+                ? "bg-emerald-600 text-white shadow-md shadow-emerald-500/20"
+                : "bg-white text-emerald-600 shadow-sm dark:bg-slate-900 dark:text-emerald-400"
             }`}
           >
             <MapPin className="h-4 w-4" />
@@ -411,7 +411,7 @@ const CityAutocomplete = ({
                     onClick={() => selectCity(option)}
                     className={`flex w-full items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left transition ${
                       isActive
-                        ? "bg-red-50 text-red-700 dark:bg-red-950/40 dark:text-red-300"
+                        ? "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300"
                         : "text-slate-700 hover:bg-slate-50 dark:text-slate-300 dark:hover:bg-slate-800"
                     }`}
                   >
@@ -419,7 +419,7 @@ const CityAutocomplete = ({
                       <span
                         className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl ${
                           isActive
-                            ? "bg-red-600 text-white"
+                            ? "bg-emerald-600 text-white shadow-sm shadow-emerald-500/20"
                             : "bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400"
                         }`}
                       >
@@ -440,7 +440,7 @@ const CityAutocomplete = ({
                     <ChevronRight
                       className={`h-4 w-4 shrink-0 transition ${
                         isActive
-                          ? "translate-x-0.5 text-red-500"
+                          ? "translate-x-0.5 text-emerald-500"
                           : "text-slate-300 dark:text-slate-600"
                       }`}
                     />
@@ -629,13 +629,13 @@ const Hero = () => {
   return (
     <section className="relative isolate overflow-hidden bg-slate-50 transition-colors duration-300 dark:bg-slate-950">
       {/* Background */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-red-50 via-white to-orange-50/70 dark:from-slate-950 dark:via-slate-900 dark:to-red-950/20" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-emerald-50/80 via-white to-teal-50/60 dark:from-slate-950 dark:via-slate-900 dark:to-emerald-950/30" />
 
-      <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-red-300/25 blur-3xl dark:bg-red-600/10" />
+      <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-emerald-400/20 blur-3xl dark:bg-emerald-600/15" />
 
-      <div className="pointer-events-none absolute -bottom-36 -left-24 h-96 w-96 rounded-full bg-orange-300/30 blur-3xl dark:bg-orange-500/10" />
+      <div className="pointer-events-none absolute -bottom-36 -left-24 h-96 w-96 rounded-full bg-teal-400/20 blur-3xl dark:bg-teal-500/15" />
 
-      <div className="pointer-events-none absolute left-1/2 top-1/3 h-72 w-72 -translate-x-1/2 rounded-full bg-rose-200/20 blur-3xl dark:bg-rose-600/5" />
+      <div className="pointer-events-none absolute left-1/2 top-1/3 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-300/15 blur-3xl dark:bg-cyan-600/10" />
 
       <div className="pointer-events-none absolute inset-0 opacity-[0.035] dark:opacity-[0.06]">
         <div className="h-full w-full bg-[radial-gradient(circle_at_center,_#0f172a_1px,_transparent_1px)] [background-size:28px_28px] dark:bg-[radial-gradient(circle_at_center,_#ffffff_1px,_transparent_1px)]" />
@@ -645,15 +645,15 @@ const Hero = () => {
         <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
           {/* Left content */}
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-red-100 bg-white/90 px-4 py-2 text-xs font-black uppercase tracking-wider text-red-600 shadow-sm backdrop-blur dark:border-red-900/50 dark:bg-slate-900/80 dark:text-red-400 sm:text-sm">
-              <Star className="h-4 w-4 fill-red-600 dark:fill-red-400" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/90 px-4 py-2 text-xs font-black uppercase tracking-wider text-emerald-700 shadow-sm backdrop-blur dark:border-emerald-800/60 dark:bg-slate-900/80 dark:text-emerald-400 sm:text-sm">
+              <Star className="h-4 w-4 fill-emerald-600 dark:fill-emerald-400" />
               {t("hero.badge")}
             </div>
 
             <h1 className="mt-5 max-w-3xl text-4xl font-black tracking-[-0.04em] text-slate-950 dark:text-white sm:text-5xl lg:text-6xl xl:text-7xl">
               {t("hero.title")}
 
-              <span className="relative mt-1 block bg-gradient-to-r from-red-600 via-red-500 to-orange-500 bg-clip-text text-transparent">
+              <span className="relative mt-1 block bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-500 bg-clip-text text-transparent">
                 {t("hero.titleHighlight")}
               </span>
             </h1>
@@ -723,13 +723,13 @@ const Hero = () => {
 
           {/* Search area */}
           <div className="relative lg:pl-2">
-            <div className="pointer-events-none absolute -inset-4 rounded-[2.5rem] bg-gradient-to-r from-red-500/10 to-orange-500/10 blur-2xl" />
+            <div className="pointer-events-none absolute -inset-4 rounded-[2.5rem] bg-gradient-to-r from-emerald-500/15 to-teal-500/15 blur-2xl" />
 
             <div className="relative rounded-[2rem] border border-white/80 bg-white/95 p-4 shadow-2xl shadow-slate-900/10 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/95 dark:shadow-black/30 sm:p-6">
               {/* Search card header */}
               <div className="mb-5 flex items-start justify-between gap-4">
                 <div>
-                  <div className="mb-2 inline-flex items-center gap-1.5 rounded-full bg-red-50 px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.16em] text-red-600 dark:bg-red-950/40 dark:text-red-400">
+                  <div className="mb-2 inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.16em] text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400">
                     <Sparkles className="h-3 w-3" />
                     Instant booking
                   </div>
@@ -743,7 +743,7 @@ const Hero = () => {
                   </p>
                 </div>
 
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-red-600 to-orange-500 text-white shadow-lg shadow-red-500/25 sm:h-14 sm:w-14">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-500 text-white shadow-lg shadow-emerald-500/25 sm:h-14 sm:w-14">
                   <Bus className="h-6 w-6" />
                 </div>
               </div>
@@ -774,7 +774,7 @@ const Hero = () => {
                     onClick={handleSwapCities}
                     title={t("hero.swapCities")}
                     aria-label={t("hero.swapCities")}
-                    className="group relative flex h-10 w-10 items-center justify-center rounded-full border-4 border-white bg-slate-900 text-white shadow-lg transition hover:rotate-180 hover:bg-red-600 active:scale-90 dark:border-slate-900 dark:bg-white dark:text-slate-900 dark:hover:bg-red-500 dark:hover:text-white"
+                    className="group relative flex h-10 w-10 items-center justify-center rounded-full border-4 border-white bg-slate-900 text-white shadow-lg transition hover:rotate-180 hover:bg-emerald-600 active:scale-90 dark:border-slate-900 dark:bg-white dark:text-slate-900 dark:hover:bg-emerald-500 dark:hover:text-white"
                   >
                     <ArrowLeftRight className="h-4 w-4" />
                   </button>
@@ -808,13 +808,13 @@ const Hero = () => {
                   </label>
 
                   <div
-                    className={`group relative rounded-2xl border transition-all duration-200 focus-within:border-red-500 focus-within:bg-white focus-within:ring-4 focus-within:ring-red-500/10 dark:focus-within:bg-slate-900 ${
+                    className={`group relative rounded-2xl border transition-all duration-200 focus-within:border-emerald-500 focus-within:bg-white focus-within:ring-4 focus-within:ring-emerald-500/10 dark:focus-within:bg-slate-900 ${
                       errors.date
                         ? "border-red-400 bg-red-50/60 dark:border-red-800 dark:bg-red-950/20"
                         : "border-slate-200 bg-slate-50 hover:border-slate-300 dark:border-slate-700 dark:bg-slate-800/70 dark:hover:border-slate-600"
                     }`}
                   >
-                    <div className="pointer-events-none absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-xl bg-white text-red-600 shadow-sm transition group-focus-within:bg-red-600 group-focus-within:text-white dark:bg-slate-900 dark:text-red-400">
+                    <div className="pointer-events-none absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-xl bg-white text-emerald-600 shadow-sm transition group-focus-within:bg-emerald-600 group-focus-within:text-white dark:bg-slate-900 dark:text-emerald-400">
                       <CalendarDays className="h-4 w-4" />
                     </div>
 
@@ -841,7 +841,7 @@ const Hero = () => {
                 {/* Search button */}
                 <button
                   type="submit"
-                  className="group flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-red-600 via-red-600 to-orange-500 px-6 py-4 text-sm font-black text-white shadow-xl shadow-red-500/25 transition duration-200 hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-red-500/30 active:translate-y-0 active:scale-[0.98]"
+                  className="group flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 px-6 py-4 text-sm font-black text-white shadow-xl shadow-emerald-500/25 transition duration-200 hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-emerald-500/35 active:translate-y-0 active:scale-[0.98]"
                 >
                   <Search className="h-5 w-5" />
                   {t("hero.searchButton")}
@@ -881,10 +881,10 @@ const Hero = () => {
                       key={`${route.source}-${route.destination}`}
                       type="button"
                       onClick={() => handleQuickRoute(route)}
-                      className="group flex items-center justify-between rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-left transition hover:-translate-y-0.5 hover:border-red-200 hover:bg-red-50 hover:shadow-md dark:border-slate-700 dark:bg-slate-800/70 dark:hover:border-red-900 dark:hover:bg-red-950/30"
+                      className="group flex items-center justify-between rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-left transition hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md dark:border-slate-700 dark:bg-slate-800/70 dark:hover:border-emerald-900 dark:hover:bg-emerald-950/30"
                     >
                       <span className="min-w-0">
-                        <span className="block truncate text-[11px] font-black text-slate-700 group-hover:text-red-600 dark:text-slate-300 dark:group-hover:text-red-400">
+                        <span className="block truncate text-[11px] font-black text-slate-700 group-hover:text-emerald-600 dark:text-slate-300 dark:group-hover:text-emerald-400">
                           {route.source}
                         </span>
 
@@ -893,7 +893,7 @@ const Hero = () => {
                         </span>
                       </span>
 
-                      <ChevronRight className="h-3.5 w-3.5 shrink-0 text-slate-300 transition group-hover:translate-x-0.5 group-hover:text-red-500 dark:text-slate-600" />
+                      <ChevronRight className="h-3.5 w-3.5 shrink-0 text-slate-300 transition group-hover:translate-x-0.5 group-hover:text-emerald-500 dark:text-slate-600" />
                     </button>
                   ))}
                 </div>
@@ -913,9 +913,9 @@ const Hero = () => {
               </div>
 
               <div className="border-x border-slate-100 p-3 text-center dark:border-slate-800 sm:p-4">
-                <p className="inline-flex items-center gap-1 text-lg font-black text-red-600 dark:text-red-400">
+                <p className="inline-flex items-center gap-1 text-lg font-black text-emerald-600 dark:text-emerald-400">
                   4.8
-                  <Star className="h-3.5 w-3.5 fill-red-500" />
+                  <Star className="h-3.5 w-3.5 fill-emerald-500" />
                 </p>
 
                 <p className="text-[10px] font-bold text-slate-500 dark:text-slate-400 sm:text-[11px]">

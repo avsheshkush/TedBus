@@ -215,7 +215,7 @@ const PassengerForm = ({
       <div className="border-b  border-slate-100 dark:border-slate-800 p-6">
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
           <div>
-            <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-red-50 dark:bg-red-900/30 px-4 py-2 text-sm font-black text-red-600">
+            <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-emerald-50 dark:bg-emerald-950/40 px-4 py-2 text-sm font-black text-emerald-700 dark:text-emerald-400">
               <UsersRound className="h-4 w-4" />
               Passenger Information
             </div>
@@ -239,7 +239,7 @@ const PassengerForm = ({
               {sortedSeats.map((seat) => (
                 <span
                   key={seat}
-                  className="inline-flex items-center gap-1 rounded-xl bg-red-600 px-3 py-1.5 text-xs font-black text-white"
+                  className="inline-flex items-center gap-1 rounded-xl bg-emerald-600 px-3 py-1.5 text-xs font-black text-white shadow-sm shadow-emerald-500/20"
                 >
                   <Armchair className="h-3.5 w-3.5" />
                   {seat}
@@ -553,7 +553,7 @@ const PassengerForm = ({
           className={`mt-8 flex w-full items-center justify-center gap-2 rounded-2xl px-6 py-4 text-base font-black transition ${
             sortedSeats.length === 0
               ? "cursor-not-allowed bg-slate-200 text-slate-400"
-              : "bg-red-600 text-white shadow-lg shadow-red-500/25 hover:bg-red-700 active:scale-[0.98]"
+              : "bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-500/25 hover:from-emerald-700 hover:to-teal-700 active:scale-[0.98]"
           }`}
         >
           Review Booking

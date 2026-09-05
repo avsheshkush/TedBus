@@ -33,19 +33,19 @@ import ThemeToggle from "./ThemeToggle";
 const NAV_THEMES = [
   {
     // Home
-    activeText: "text-red-600 dark:text-red-400",
+    activeText: "text-emerald-600 dark:text-emerald-400",
     activeBg:
-      "bg-red-50 dark:bg-red-950/30",
+      "bg-emerald-50 dark:bg-emerald-950/30",
     hoverBg:
-      "hover:bg-red-50/80 dark:hover:bg-red-950/20",
+      "hover:bg-emerald-50/80 dark:hover:bg-emerald-950/20",
     hoverText:
-      "hover:text-red-600 dark:hover:text-red-400",
-    iconActive: "text-red-600 dark:text-red-400",
+      "hover:text-emerald-600 dark:hover:text-emerald-400",
+    iconActive: "text-emerald-600 dark:text-emerald-400",
     iconHover:
-      "group-hover:text-red-500 dark:group-hover:text-red-400",
-    dot: "bg-red-600 dark:bg-red-400",
-    glowShadow: "shadow-[0_0_12px_rgba(220,38,38,0.7)]",
-    mobileBorder: "border-l-red-500",
+      "group-hover:text-emerald-500 dark:group-hover:text-emerald-400",
+    dot: "bg-emerald-600 dark:bg-emerald-400",
+    glowShadow: "shadow-[0_0_12px_rgba(5,150,105,0.7)]",
+    mobileBorder: "border-l-emerald-500",
   },
   {
     // Search Bus
@@ -310,14 +310,14 @@ const Navbar = () => {
           onClick={closeAllMenus}
           className="group flex shrink-0 items-center gap-2.5"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-red-500 via-red-600 to-red-700 text-white shadow-lg shadow-red-500/30 transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-red-500/40 group-active:scale-95 sm:h-11 sm:w-11 sm:rounded-2xl">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 via-emerald-600 to-teal-700 text-white shadow-lg shadow-emerald-500/30 transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-emerald-500/40 group-active:scale-95 sm:h-11 sm:w-11 sm:rounded-2xl">
             <Bus className="h-5 w-5" />
           </div>
 
           <div className="leading-tight">
             <h1 className="text-xl font-black tracking-tight text-slate-900 dark:text-white sm:text-2xl">
               Ted
-              <span className="text-red-600 dark:text-red-500">
+              <span className="text-emerald-600 dark:text-emerald-400">
                 Bus
               </span>
             </h1>
@@ -395,7 +395,7 @@ const Navbar = () => {
             <div className="hidden items-center gap-2 sm:flex">
               <Link
                 to="/login"
-                className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-700 transition-all duration-300 hover:-translate-y-0.5 hover:border-red-200 hover:text-red-600 hover:shadow-md active:translate-y-0 active:scale-[0.98] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:border-red-900 dark:hover:text-red-400"
+                className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-700 transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-200 hover:text-emerald-600 hover:shadow-md active:translate-y-0 active:scale-[0.98] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:border-emerald-900 dark:hover:text-emerald-400"
               >
                 <LogIn className="h-4 w-4" />
 
@@ -406,7 +406,7 @@ const Navbar = () => {
 
               <Link
                 to="/register"
-                className="inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-3 py-2 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-red-500/35 active:translate-y-0 active:scale-[0.98]"
+                className="inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 px-3 py-2 text-sm font-bold text-white shadow-lg shadow-emerald-500/25 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-emerald-500/35 active:translate-y-0 active:scale-[0.98]"
               >
                 <UserPlus className="h-4 w-4" />
 
@@ -424,7 +424,7 @@ const Navbar = () => {
                 to="/admin/dashboard"
                 className="inline-flex items-center gap-1.5 rounded-xl border border-slate-700 bg-gradient-to-r from-slate-900 to-slate-800 px-3 py-2 text-sm font-bold text-white shadow-lg shadow-slate-900/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl active:translate-y-0 active:scale-[0.98] dark:border-slate-600 dark:from-slate-800 dark:to-slate-700"
               >
-                <LayoutDashboard className="h-4 w-4 text-red-400" />
+                <LayoutDashboard className="h-4 w-4 text-emerald-400" />
 
                 <span className="hidden lg:inline">
                   Admin
@@ -449,7 +449,7 @@ const Navbar = () => {
                   onClick={() =>
                     setShowDropdown((prev) => !prev)
                   }
-                  className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white p-1.5 pr-2.5 transition-all duration-300 hover:border-red-200 hover:shadow-md active:scale-[0.98] dark:border-slate-700 dark:bg-slate-800 dark:hover:border-red-900"
+                  className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white p-1.5 pr-2.5 transition-all duration-300 hover:border-emerald-200 hover:shadow-md active:scale-[0.98] dark:border-slate-700 dark:bg-slate-800 dark:hover:border-emerald-900"
                 >
                   {user?.profileImage ? (
                     <img
@@ -458,7 +458,7 @@ const Navbar = () => {
                       className="h-8 w-8 rounded-lg object-cover ring-2 ring-slate-100 dark:ring-slate-700"
                     />
                   ) : (
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-red-500 to-red-600 text-sm font-black text-white shadow-md">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 text-sm font-black text-white shadow-md">
                       {userInitial}
                     </div>
                   )}
@@ -496,10 +496,10 @@ const Navbar = () => {
             type="button"
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 transition-all duration-300 hover:border-red-200 hover:shadow-md active:scale-95 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400 dark:hover:border-red-900 lg:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 transition-all duration-300 hover:border-emerald-200 hover:shadow-md active:scale-95 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400 dark:hover:border-emerald-900 lg:hidden"
           >
             {menuOpen ? (
-              <X className="h-5 w-5 text-red-600 dark:text-red-400" />
+              <X className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
             ) : (
               <Menu className="h-5 w-5" />
             )}
@@ -594,7 +594,7 @@ const Navbar = () => {
                 <Link
                   to="/register"
                   onClick={closeAllMenus}
-                  className="flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-red-600 to-red-700 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition-all active:scale-95"
+                  className="flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-500/25 transition-all active:scale-95"
                 >
                   <UserPlus className="h-4 w-4" />
                   Register
@@ -607,7 +607,7 @@ const Navbar = () => {
               <div className="space-y-3 rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-4 text-white shadow-xl dark:border-slate-600 dark:from-slate-800 dark:to-slate-700">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 backdrop-blur">
-                    <ShieldCheck className="h-5 w-5 text-red-400" />
+                    <ShieldCheck className="h-5 w-5 text-emerald-400" />
                   </div>
 
                   <div>
@@ -626,7 +626,7 @@ const Navbar = () => {
                   onClick={closeAllMenus}
                   className="flex items-center justify-center gap-2 rounded-xl bg-white/10 py-3.5 text-sm font-bold backdrop-blur transition hover:bg-white/20 active:scale-95"
                 >
-                  <LayoutDashboard className="h-4 w-4 text-red-400" />
+                  <LayoutDashboard className="h-4 w-4 text-emerald-400" />
                   Admin Dashboard
                 </Link>
 

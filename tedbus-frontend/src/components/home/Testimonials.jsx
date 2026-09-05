@@ -55,10 +55,10 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Pravesh Yadav",
+    name: "Avshesh Kushwaha",
     role: "Freelancer",
-    location: "Pune",
-    initial: "P",
+    location: "Ghaziabad",
+    initial: "A",
     rating: 5,
     review:
       "Best bus booking platform I have ever used. The customer support team helped me reschedule my trip at midnight. They genuinely care about their travellers.",
@@ -288,11 +288,11 @@ const Testimonials = () => {
   return (
     <section className="relative isolate overflow-hidden bg-slate-50 py-16 transition-colors duration-300 dark:bg-slate-950 sm:py-20 lg:py-24">
       {/* Background */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-red-50/70 via-slate-50 to-orange-50/60 dark:from-red-950/10 dark:via-slate-950 dark:to-orange-950/10" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-emerald-50/70 via-slate-50 to-teal-50/60 dark:from-emerald-950/15 dark:via-slate-950 dark:to-teal-950/15" />
 
-      <div className="pointer-events-none absolute -left-32 top-16 h-96 w-96 rounded-full bg-red-300/20 blur-3xl dark:bg-red-600/10" />
+      <div className="pointer-events-none absolute -left-32 top-16 h-96 w-96 rounded-full bg-emerald-300/20 blur-3xl dark:bg-emerald-600/10" />
 
-      <div className="pointer-events-none absolute -right-32 bottom-10 h-96 w-96 rounded-full bg-orange-300/20 blur-3xl dark:bg-orange-500/10" />
+      <div className="pointer-events-none absolute -right-32 bottom-10 h-96 w-96 rounded-full bg-teal-300/20 blur-3xl dark:bg-teal-500/10" />
 
       <div className="pointer-events-none absolute inset-0 opacity-[0.035] dark:opacity-[0.06]">
         <div className="h-full w-full bg-[radial-gradient(circle_at_center,_#0f172a_1px,_transparent_1px)] [background-size:30px_30px] dark:bg-[radial-gradient(circle_at_center,_#ffffff_1px,_transparent_1px)]" />
@@ -302,14 +302,14 @@ const Testimonials = () => {
         {/* Header */}
         <div className="mb-9 flex flex-col gap-6 sm:mb-11 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-red-100 bg-white/90 px-4 py-2 text-[10px] font-black uppercase tracking-[0.18em] text-red-600 shadow-sm backdrop-blur dark:border-red-900/50 dark:bg-slate-900/80 dark:text-red-400 sm:text-xs">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/90 px-4 py-2 text-[10px] font-black uppercase tracking-[0.18em] text-emerald-700 shadow-sm backdrop-blur dark:border-emerald-800/60 dark:bg-slate-900/80 dark:text-emerald-400 sm:text-xs">
               <Users className="h-4 w-4" />
               Trusted by 10,000+ travellers
             </div>
 
             <h2 className="text-3xl font-black tracking-[-0.04em] text-slate-950 dark:text-white sm:text-4xl lg:text-5xl">
               Real stories from
-              <span className="ml-2 bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
+              <span className="ml-2 bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-600 bg-clip-text text-transparent">
                 happy travellers
               </span>
             </h2>
@@ -344,7 +344,7 @@ const Testimonials = () => {
                 onClick={() => scrollCards(-1)}
                 disabled={!canScrollLeft}
                 aria-label="Show previous review"
-                className="flex h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-red-200 hover:bg-red-50 hover:text-red-600 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-red-900 dark:hover:bg-red-950/30 dark:hover:text-red-400"
+                className="flex h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-600 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-emerald-900 dark:hover:bg-emerald-950/30 dark:hover:text-emerald-400"
               >
                 <ArrowLeft className="h-5 w-5" />
               </button>
@@ -482,11 +482,10 @@ const Testimonials = () => {
                 type="button"
                 onClick={() => scrollToCard(index)}
                 aria-label={`Show review from ${item.name}`}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  currentIndex === index
-                    ? "w-7 bg-gradient-to-r from-red-600 to-orange-500"
-                    : "w-2 bg-slate-300 hover:bg-red-300 dark:bg-slate-700 dark:hover:bg-red-800"
-                }`}
+                className={`h-2 rounded-full transition-all duration-300 ${currentIndex === index
+                    ? "w-7 bg-gradient-to-r from-emerald-600 to-teal-500"
+                    : "w-2 bg-slate-300 hover:bg-emerald-300 dark:bg-slate-700 dark:hover:bg-emerald-800"
+                  }`}
               />
             ))}
           </div>

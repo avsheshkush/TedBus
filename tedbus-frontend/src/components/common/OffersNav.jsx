@@ -31,16 +31,16 @@ const categories = [
 
 const THEMES = [
   {
-    gradient: "from-rose-600 via-red-500 to-orange-500",
-    text: "text-rose-600 dark:text-rose-400",
-    bgLight: "bg-rose-50 dark:bg-rose-950/30",
-    borderLight: "border-rose-200 dark:border-rose-900/40",
-    hoverBorder: "hover:border-rose-200 dark:hover:border-rose-900/60",
-    hoverShadow: "hover:shadow-rose-500/10",
-    dotColor: "bg-rose-500",
+    gradient: "from-emerald-700 via-emerald-600 to-teal-500",
+    text: "text-emerald-600 dark:text-emerald-400",
+    bgLight: "bg-emerald-50 dark:bg-emerald-950/30",
+    borderLight: "border-emerald-200 dark:border-emerald-900/40",
+    hoverBorder: "hover:border-emerald-200 dark:hover:border-emerald-900/60",
+    hoverShadow: "hover:shadow-emerald-500/10",
+    dotColor: "bg-emerald-500",
     tagLabel: "Hot Deal",
-    copyBg: "bg-rose-600 hover:bg-rose-700",
-    copiedBg: "bg-emerald-600",
+    copyBg: "bg-emerald-600 hover:bg-emerald-700",
+    copiedBg: "bg-teal-600",
   },
   {
     gradient: "from-blue-600 via-blue-500 to-cyan-500",

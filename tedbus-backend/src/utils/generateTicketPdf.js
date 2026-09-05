@@ -98,8 +98,7 @@ const generateTicketPdf = async (booking, res) => {
     .font("Helvetica-Bold")
     .fontSize(11)
     .text(
-      `Booking: ${booking.bookingStatus || "Pending"}   |   Payment: ${
-        booking.paymentStatus || "Pending"
+      `Booking: ${booking.bookingStatus || "Pending"}   |   Payment: ${booking.paymentStatus || "Pending"
       }`,
       50,
       122,
@@ -496,7 +495,7 @@ const generateTicketPdf = async (booking, res) => {
     .font("Helvetica")
     .fontSize(8)
     .text(
-      "praveshyadav@tedbus.com  •  www.tedbus.com  •  Available 24x7",
+      "avsheshkush@tedbus.com  •  www.tedbus.com  •  Available 24x7",
       40,
       footerY + 28,
       {

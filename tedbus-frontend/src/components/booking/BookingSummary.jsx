@@ -379,7 +379,7 @@ const BookingSummary = ({
       <div className="space-y-5 lg:col-span-2">
         {/* Trip Summary */}
         <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900">
-          <div className="bg-gradient-to-br from-red-600 via-red-500 to-orange-500 p-5 text-white dark:from-red-700 dark:via-red-600 dark:to-orange-600 sm:p-6">
+          <div className="bg-gradient-to-br from-emerald-600 via-emerald-500 to-teal-600 p-5 text-white dark:from-emerald-800 dark:via-emerald-700 dark:to-teal-800 sm:p-6">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div>
                 <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1.5 text-xs font-bold backdrop-blur sm:text-sm">
@@ -391,7 +391,7 @@ const BookingSummary = ({
                   Review Your Journey
                 </h2>
 
-                <p className="mt-2 text-sm font-semibold text-red-50">
+                <p className="mt-2 text-sm font-semibold text-emerald-50">
                   Confirm trip, seats and passenger details before payment.
                 </p>
               </div>
@@ -407,7 +407,7 @@ const BookingSummary = ({
             <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-950 sm:p-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="min-w-0">
-                  <div className="flex items-center gap-2 text-sm font-black text-red-600 dark:text-red-400">
+                  <div className="flex items-center gap-2 text-sm font-black text-emerald-600 dark:text-emerald-400">
                     <BusFront className="h-4 w-4" />
                     Bus Details
                   </div>
@@ -502,7 +502,7 @@ const BookingSummary = ({
             {/* Selected Seats */}
             <div className="mt-5 border-t border-slate-100 pt-5 dark:border-slate-800">
               <h3 className="flex items-center gap-2 text-base font-black text-slate-900 dark:text-white sm:text-lg">
-                <Armchair className="h-5 w-5 text-red-600 dark:text-red-400" />
+                <Armchair className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
                 Selected Seats ({sortedSeats.length})
               </h3>
 
@@ -511,7 +511,7 @@ const BookingSummary = ({
                   sortedSeats.map((seat) => (
                     <span
                       key={seat}
-                      className="inline-flex items-center gap-1 rounded-xl bg-red-600 px-3 py-1.5 text-sm font-black text-white"
+                      className="inline-flex items-center gap-1 rounded-xl bg-emerald-600 px-3 py-1.5 text-sm font-black text-white shadow-sm shadow-emerald-500/20"
                     >
                       <CheckCircle2 className="h-4 w-4" />
                       {seat}
@@ -741,7 +741,7 @@ const BookingSummary = ({
                 Payable Amount
               </span>
 
-              <span className="text-2xl font-black text-red-600 dark:text-red-400 sm:text-3xl">
+              <span className="text-2xl font-black text-emerald-600 dark:text-emerald-400 sm:text-3xl">
                 ₹{formatCurrency(payableAmount)}
               </span>
             </div>
@@ -753,7 +753,7 @@ const BookingSummary = ({
               className={`mt-6 flex w-full items-center justify-center gap-2 rounded-2xl px-6 py-4 text-sm font-black transition ${
                 creatingBooking || totalSeats === 0
                   ? "cursor-not-allowed bg-slate-200 text-slate-400 dark:bg-slate-800 dark:text-slate-600"
-                  : "bg-red-600 text-white shadow-lg shadow-red-500/25 hover:bg-red-700 active:scale-[0.98] dark:shadow-red-900/30"
+                  : "bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-500/25 hover:from-emerald-700 hover:to-teal-700 active:scale-[0.98] dark:shadow-emerald-950/40"
               }`}
             >
               {creatingBooking ? (
